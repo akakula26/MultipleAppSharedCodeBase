@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MultipleAppSharedCodeBase</string>
+    <string name="app_name_simpsons">Simpsons Character Viewer</string>
+    <string name="app_name_wire">The Wire Character Viewer</string>
+</resources>

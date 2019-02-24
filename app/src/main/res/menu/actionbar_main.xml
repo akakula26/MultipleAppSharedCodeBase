@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:compat="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_back"
+        android:icon = "@drawable/ic_launcher_foreground"
+        compat:showAsAction="always"
+        android:title="TechTablet"
+        tools:ignore="AppCompatResource" />
+
+    </menu>
