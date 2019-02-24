@@ -170,6 +170,5 @@ public class MainActivity extends AppCompatActivity {
         }else{
             mTitle.setText(R.string.app_name_wire);
         }
-
     }
 }
