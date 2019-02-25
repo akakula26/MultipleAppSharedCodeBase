@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        emptyText = (TextView) findViewById(R.id.textView);
         tabletSize = getResources().getBoolean(R.bool.isTablet );
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);

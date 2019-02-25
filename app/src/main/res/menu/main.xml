@@ -3,19 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!--<item
-        android:id="@+id/menu_toogle"
-        android:title=""
-        app:showAsAction="always"
-        android:actionLayout="@layout/actionbar_layout"
-        tools:ignore="AppCompatResource" />-->
-
-   <!-- <item
-        android:id="@+id/miCompose"
-        android:icon="@drawable/menu_icon"
-        app:showAsAction="ifRoom"
-        android:title="Compose">
-    </item>-->
 
     <item
         android:id="@+id/menu_toogle"
@@ -24,10 +11,5 @@
         android:visible="true"
         app:actionLayout="@layout/actionbar_layout"
         app:showAsAction="ifRoom" />
-
-    <!--<item-->
-        <!--android:id="@+id/checkable_menu"-->
-        <!--android:checkable="true"-->
-        <!--android:title="check" />-->
 
 </menu>

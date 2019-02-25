@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -39,7 +40,7 @@ public class DetailsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.details_fragment, container, false);
-
+        setHasOptionsMenu(true);
         tabletSize = getResources().getBoolean(R.bool.isTablet );
         title = (TextView) mView.findViewById(R.id.title_view);
         description = (TextView) mView.findViewById(R.id.detail_view);
@@ -53,6 +54,14 @@ public class DetailsFragment extends Fragment {
     }
 
 
+    @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        super.onPrepareOptionsMenu(menu);
+        if(tabletSize==false) {
+            MenuItem item = menu.findItem(R.id.menu_toogle);
+            item.setVisible(false);
+        }
+    }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -72,7 +81,6 @@ public class DetailsFragment extends Fragment {
             title.setText("Title :"+titleValue);
             description.setText("Description :"+descriptionValue);
             mTitle.setText(titleValue);
-//            setHasOptionsMenu(false);
             Picasso.get().load(imageValue).resize(350, 250).into(image);
         }
 
